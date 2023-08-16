@@ -42,7 +42,7 @@ class PropertyCalculator {
   }
 }
 
-function calc(property, style, selector) {
+export function calc(property, style, selector) {
   const calculator = new PropertyCalculator(selector);
 
   calculator.style[property] = style;
@@ -54,6 +54,6 @@ function calc(property, style, selector) {
   console.log(`${selector} { ${property}: ${val} }`);
 }
 
-calc("margin-left", "calc(var(--some-var) * 10)");
-calc("margin-left", "calc(var(--some-var) * 10)", ".some-span");
-calc("top", "calc(var(--some-var) * 10)", ".some-div");
+// calc("margin-left", "calc(var(--some-var) * 10)");
+// calc("margin-left", "calc(var(--some-var) * 10)", ".some-span");
+// calc("top", "calc(var(--some-var) * 10)", ".some-div");
