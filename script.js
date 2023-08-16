@@ -51,7 +51,7 @@ export function calc(property, style, selector) {
     .getComputedStyle(calculator.element)
     .getPropertyValue(property);
 
-  console.log(`${selector} { ${property}: ${val} }`);
+  console.log(`${selector || ".property-calculator-container"} { ${property}: ${val} }`);
 }
 
 // calc("margin-left", "calc(var(--some-var) * 10)");
