@@ -1,0 +1,11 @@
+:root {
+  --some-var: 15px;
+}
+
+.some-span {
+  --some-var: 30px
+}
+
+.some-div {
+  --some-var: 1px
+}
